@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Answer the questions</h1>
+    5+5 =  <input type="number" id="sum"> <br>
+    6-2 = <input type="number" id="sub"> <br>
+    sqrt(36) = <input type="number" id="sq">
+    <button onclick="exm()">submit</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    function exm(){
+        var sum = document.getElementById("sum").value;
+        var sub = document.getElementById("sub").value;
+        var sqrt = document.getElementById("sq").value;
+        var s = 0;
+        if(sum == 10){
+            s = s+1;
+        }
+        if(sub==4)
+        {
+            s=s+1;
+        }
+        if(sqrt==6)
+        {
+            s=s+1;
+        }
+        document.getElementById("result").innerHTML="Total mark = "+s+" in 3";
+
+    }
+</script>

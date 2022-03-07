@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>sum</h2>
+    <form >
+        <input type="text" name="num1" id="num">
+        <input type="text" name="num2" id ="string">
+        <input type="button" onclick="fu()" value="submit">
+        <p id="demo"></p>
+        <p id="d"></p>
+    </form>
+</body>
+</html>
+<script>
+    function fu(){
+        var num1 = document.getElementById("num").value;
+        var sum = Math.sqrt(num1);
+        document.getElementById("demo").innerHTML = "square root of the number is = "+sum;
+        let num2 = document.getElementById("string").value;
+        document.getElementById("d").innerHTML = "length of the string is ="+num2.length;
+
+    }
+</script>
